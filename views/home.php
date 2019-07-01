@@ -1,17 +1,4 @@
-<section class="home">
-    <div class="nav">
-        <ul>
-            <li><a href="#">Transition</a></li>
-            <li><a href="#">Animation</a>
-                <ul>
-                    <li><a href="#">Transformação</a></li>
-                    <li><a href="#">Movimento</a></li>
-                    <li><a href="#">Slide</a></li>
-                </ul>
-            </li>
-        </ul>
-    </div>
-    <div>
+
 <?php
 session_start();
 
@@ -35,5 +22,3 @@ if (!isset($_SESSION["logado"]) || !$_SESSION["logado"]) {
 <?php
 }
 ?>
-    </div>
-</section>

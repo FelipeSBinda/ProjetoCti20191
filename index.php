@@ -7,7 +7,7 @@ require "dao/DAO.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Teste</title>
+    <title>Controle Acadêmico</title>
     <link rel="stylesheet" type="text/css" href="vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/estilos/estilo.css">
 </head>
@@ -17,7 +17,7 @@ require "dao/DAO.php";
         <header class="card-header sticky-top">
 
             <nav class="navbar navbar-dark bg-light">
-                            <h1>Nome do Site</h1>
+                            <h1>Controle Acadêmico</h1>
                 <ul class="nav">
                       <li class="nav-item">
                         <a class="nav-link active" href="?pagina=home">Home</a>
