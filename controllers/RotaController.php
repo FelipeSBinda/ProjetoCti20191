@@ -10,6 +10,9 @@ class RotaController {
 	function edicao() {
 		include "views/formulario.php";
 	}
+	function novo() {
+		include "views/formulario.php";
+	}
 
 }
 ?>

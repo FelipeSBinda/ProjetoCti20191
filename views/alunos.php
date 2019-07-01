@@ -5,6 +5,11 @@ if (isset($_SESSION["perfil"])) {
 	if ($_SESSION["perfil"] == "prof") {
 		?>
             <section class="container" id="tabela">
+     <?php
+echo "<div class='col-sm'> <a href='?pagina=novo'>";
+		include "assets/icons/plus.svg";
+		echo "</a>";
+		?>
                 <div class="row">
                     <div class="col-sm">Aluno</div>
                     <div class="col-sm">Login</div>
@@ -20,7 +25,7 @@ $dao = new DAO();
 			}
 			echo "<div class='col-sm'> <a href='?pagina=editar&log=" . $aluno["usuario"] . "'>";
 			include "assets/icons/resume.svg";
-			echo "</a> <a href=''>";
+			echo "</a> <a href='' onclick='confirmacao(" . $aluno["id"] . ",this)'>";
 			include "assets/icons/delete2.svg";
 			echo "</a> </div></div>";
 		}
@@ -38,3 +43,4 @@ $dao = new DAO();
 }
 
 ?>
+<script type="text/javascript" src="assets/script/script.js"></script>
