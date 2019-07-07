@@ -20,9 +20,10 @@ $dao = new DAO();
 		$alunos = $dao->buscarTodos("aluno");
 		foreach ($alunos as $aluno) {
 			echo " <div class='row'>";
-			foreach ($aluno as $coluna => $valor) {
-				echo "<div class='col-sm'> $valor </div>";
-			}
+
+			echo "<div class='col-sm'>" . $aluno["nome"] . "</div>";
+			echo "<div class='col-sm'>" . $aluno["usuario"] . "</div>";
+
 			echo "<div class='col-sm'> <a href='?pagina=editar&log=" . $aluno["usuario"] . "'>";
 			include "assets/icons/resume.svg";
 			echo "</a> <a href='' onclick='confirmacao(" . $aluno["id"] . ",this)'>";
